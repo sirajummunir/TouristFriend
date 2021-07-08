@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F0F3"
+    tools:context=".NewPlaceActivity">
+
+    <ImageView
+        android:id="@+id/imageViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TouristId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_centerHorizontal="true"
+        android:text="New Place"
+        android:textColor="#673AB7"
+        android:textSize="30dp"
+
+        />
+
+    <EditText
+        android:id="@+id/placeEditTextId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_25"
+        android:ems="10"
+        android:hint="Enter a place name"
+        android:inputType="text"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/addressEditTextId"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/addressEditTextId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_25"
+        android:ems="10"
+        android:hint="Enter place address"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/chooseImageCardViewId"
+        android:layout_alignLeft="@+id/placeEditTextId"
+        android:layout_alignStart="@+id/placeEditTextId" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:id="@+id/chooseImageCardViewId"
+        android:layout_above="@+id/addCardViewId"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/signInId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Choose Image"
+                android:textColor="#fff"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:id="@+id/addCardViewId"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/signInId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Add Place"
+                android:textColor="#fff"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "890359436156",
+    "firebase_url": "https://touristfriend-c8719.firebaseio.com",
+    "project_id": "touristfriend-c8719",
+    "storage_bucket": "touristfriend-c8719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890359436156:android:37c89c0dda6fb292b98af9",
+        "android_client_info": {
+          "package_name": "sparrow.com.touristfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890359436156-vu1j4m0q32qsvbj0dflo8gv8ph9v1amj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM7c8wxB6Sbrlk8d47bkbL845XeVZqii8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890359436156-vu1j4m0q32qsvbj0dflo8gv8ph9v1amj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

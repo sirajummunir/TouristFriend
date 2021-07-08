@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageViewId"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TouristId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bolditalic"
+        android:layout_below="@+id/imageViewId"
+        android:layout_centerHorizontal="true"
+        android:text="Tourist Friend"
+        android:textColor="#ffff"
+        android:textSize="36dp"
+
+        />
+
+    <EditText
+        android:id="@+id/placeEditTextId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_25"
+        android:drawableLeft="@drawable/ic_baseline_contact_mail_24"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/addressEditTextId"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/addressEditTextId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_25"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignBottom="@+id/chooseImageCardViewId"
+        android:layout_alignLeft="@+id/placeEditTextId"
+        android:layout_alignStart="@+id/placeEditTextId" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:id="@+id/chooseImageCardViewId"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/registerId"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/signInId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Register Now"
+                android:textColor="#fff"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/registerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Register? SignIn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:textSize="18dp"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
